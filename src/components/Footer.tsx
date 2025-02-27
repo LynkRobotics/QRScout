@@ -6,11 +6,14 @@ export function Footer() {
   const teamNumber = useQRScoutState(state => state.formData.teamNumber);
   return (
     <footer>
+      <div className="h-24 w-96">
+        <Logo />
+      </div>
       <div className="mt-8 flex flex-col items-center justify-center p-2 gap-2">
         {teamNumber == 9496 && (
           <>
             <span className="text-2xl text-primary font-lynk">
-              LYNK 9496
+              We
             </span>
             <Heart className="text-primary size-8 fill-primary" />
             <span className="text-2xl text-primary font-lynk">
@@ -18,9 +21,6 @@ export function Footer() {
             </span>
           </>
         )}
-      <div className="h-24 w-96">
-        <Logo />
-      </div>
       </div>
     </footer>
   );
