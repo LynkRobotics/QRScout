@@ -18,6 +18,9 @@ export function Footer() {
             </span>
           </>
         )}
+      <div className="h-24 w-96">
+        <Logo />
+      </div>
       </div>
     </footer>
   );
