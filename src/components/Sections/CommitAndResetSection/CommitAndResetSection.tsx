@@ -3,6 +3,7 @@ import { useMemo } from 'react';
 import { useQRScoutState } from '../../../store/store';
 import { Section } from '../../core/Section';
 import { ResetButton } from './ResetButton';
+import { ReloadButton } from './ReloadButton';
 
 export function CommitAndResetSection() {
   const formData = useQRScoutState(state => state.formData);
@@ -26,6 +27,7 @@ export function CommitAndResetSection() {
     <Section>
       <QRModal disabled={missingRequiredFields} />
       <ResetButton />
+      <ReloadButton />
     </Section>
   );
 }
