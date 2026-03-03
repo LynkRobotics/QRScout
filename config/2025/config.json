@@ -3,6 +3,10 @@
   "page_title": "REEFSCAPE",
   "delimiter": "\t",
   "teamNumber": 9496,
+  "floatingField": {
+    "show": false,
+    "codeValue": "teamNumber"
+  },
   "theme": {
     "light": {
       "background": "0 0% 100%",
