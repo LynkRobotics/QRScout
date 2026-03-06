@@ -105,7 +105,8 @@
                         "OB": "Outpost Bump",
                         "H": "Hub",
                         "DB": "Depot Bump",
-                        "DT": "Depot Trench"
+                        "DT": "Depot Trench",
+                        "X": "Not present"
                     }
                 }
             ]
