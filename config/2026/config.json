@@ -115,20 +115,6 @@
             "name": "Match",
             "fields": [
                 {
-                    "title": "Climbed (Auto)",
-                    "description": "Did the robot climb during autonomous?",
-                    "type": "select",
-                    "required": false,
-                    "code": "autoClimbed",
-                    "formResetBehavior": "reset",
-                    "defaultValue": "No",
-                    "choices": {
-                        "No": "No Climb",
-                        "Yes": "Climb",
-                        "F": "Failed Climb"
-                    }
-                },
-                {
                     "title": "Neutral Zone (Auto)",
                     "description": "Check if the robot entered the neutral zone during autonomous.",
                     "type": "boolean",
@@ -138,40 +124,8 @@
                     "defaultValue": false
                 },
                 {
-                    "title": "Hopper deliveries",
-                    "description": "The number of times the robot delivered about a full hopper's worth of fuel.",
-                    "type": "counter",
-                    "required": false,
-                    "code": "fullHoppers",
-                    "formResetBehavior": "reset",
-                    "defaultValue": 0,
-                    "min": 0,
-                    "step": 1
-                },
-                {
-                    "title": "Climbed (Endgame)",
-                    "description": "The level the robot climbed during endgame.",
-                    "type": "select",
-                    "required": true,
-                    "code": "climbed",
-                    "formResetBehavior": "reset",
-                    "defaultValue": "No",
-                    "choices": {
-                        "No": "No Climb",
-                        "L1": "Level 1",
-                        "L2": "Level 2",
-                        "L3": "Level 3",
-                        "F": "Failed Climb"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "Postmatch",
-            "fields": [
-                {
                     "title": "Scoring Accuracy",
-                    "description": "Rate the robot's scoring accuracy.",
+                    "description": "Rate the robot's scoring accuracy. 0 = Not observed",
                     "type": "range",
                     "required": false,
                     "code": "scoringAcc",
@@ -183,7 +137,7 @@
                 },
                 {
                     "title": "Defensive Skill",
-                    "description": "Rate the robot's defensive skill.",
+                    "description": "Rate the robot's defensive skill. 0 = Not observed",
                     "type": "range",
                     "required": false,
                     "code": "defSkill",
@@ -192,7 +146,12 @@
                     "min": 0,
                     "max": 3,
                     "step": 1
-                },
+                }
+            ]
+        },
+        {
+            "name": "Postmatch",
+            "fields": [
                 {
                     "title": "Comments",
                     "description": "Did they break? Get stuck? Cause fouls? Use notable strategies? Human player notes? Write it all down here.",
@@ -202,7 +161,7 @@
                     "formResetBehavior": "reset",
                     "defaultValue": "",
                     "min": 0,
-                    "max": 300
+                    "max": 400
                 }
             ]
         }
